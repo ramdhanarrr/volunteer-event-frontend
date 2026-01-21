@@ -1,40 +1,29 @@
 # Volunteer Event Frontend
 
-Frontend application for Volunteer Event Management System.  
-This project is built as part of an **Internship Frontend Developer assignment**.
-
-The application allows users to explore volunteer events, view event details, and join events through a clean and responsive UI.
+Aplikasi frontend untuk sistem Volunteer Event Management yang dibuat sebagai bagian dari tugas seleksi **Magang Frontend Developer**.
 
 ---
+
 
 ## 🚀 Tech Stack
-
-- **React.js** (Vite)
-- **Tailwind CSS**
-- **React Router DOM**
-- **JavaScript (ES6+)**
+- React.js (Vite)
+- Tailwind CSS
+- React Router DOM
 
 ---
 
-## ✨ Features
-
-- Landing page with modern UI
-- Event list page
-- Event detail page
-- Join event interaction
-- Responsive design (mobile & desktop)
-- Reusable components (Navbar, Cards, etc.)
-- Clean folder structure
-- UX states:
-  - Loading
-  - Error
-  - Empty state
+## ✨ Fitur
+- Landing page
+- Daftar event
+- Detail event
+- Join event
+- Responsive (mobile & desktop)
+- Reusable component & layout
+- Loading, error, dan empty state
 
 ---
 
 ## 📂 Project Structure
-
-```text
 src/
 ├── components/
 │   ├── Navbar.jsx
@@ -56,3 +45,22 @@ src/
 │
 ├── App.jsx
 └── main.jsx
+
+---
+
+## ⚙️ Cara Menjalankan
+npm install
+npm run dev
+
+---
+
+❓ Pertanyaan Wajib
+
+1. Bagian tersulit?
+Mengatur routing dan layout agar konsisten di setiap halaman.
+
+2. Jika diberi waktu lebih?
+Menambahkan autentikasi dan integrasi API backend.
+
+3. Asumsi UX?
+Pengguna membutuhkan navigasi yang jelas dan feedback saat berinteraksi.
