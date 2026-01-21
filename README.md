@@ -24,16 +24,15 @@ Aplikasi frontend untuk sistem Volunteer Event Management yang dibuat sebagai ba
 ---
 
 ## 📂 Project Structure
+```text
 src/
 ├── components/
 │   ├── Navbar.jsx
 │   ├── Hero.jsx
 │   ├── EventPreview.jsx
 │   ├── Loading.jsx
+│   ├── ValueSection.jsx
 │   └── ErrorMessage.jsx
-│
-├── layouts/
-│   └── Layout.jsx
 │
 ├── pages/
 │   ├── Landing.jsx
@@ -45,12 +44,15 @@ src/
 │
 ├── App.jsx
 └── main.jsx
+```
 
 ---
 
 ## ⚙️ Cara Menjalankan
+```bash
 npm install
 npm run dev
+```
 
 ---
 
