@@ -5,56 +5,73 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="max-w-6xl mx-auto px-6 pt-6">
-      <div className="bg-white rounded-full shadow-sm px-6 py-3 flex items-center justify-between">
-        
+    <header className="max-w-6xl px-6 pt-6 mx-auto">
+      <div className="flex items-center justify-between px-6 py-3 bg-white rounded-full shadow-sm">
         {/* Logo */}
-        <Link to="/" className="font-bold text-blue-600 text-lg">
-          Volunteer
+        <Link to="/" className="text-lg font-bold tracking-tight text-blue-600">
+          Volunteer.id
         </Link>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex gap-6 text-sm text-gray-600">
-          <Link to="/">Home</Link>
-          <Link to="/events">Events</Link>
-          <Link to="#">About</Link>
+        <nav className="hidden gap-8 text-sm font-medium text-gray-600 md:flex">
+          <Link to="/" className="transition-colors hover:text-blue-600">
+            Home
+          </Link>
+          <Link to="/events" className="transition-colors hover:text-blue-600">
+            Kegiatan
+          </Link>
+          <Link to="#" className="transition-colors hover:text-blue-600">
+            Tentang Kami
+          </Link>
         </nav>
 
         {/* Desktop CTA */}
         <Link
           to="/events"
-          className="hidden md:inline-block bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-medium"
+          className="hidden px-6 py-2 text-sm font-semibold text-white transition-all bg-blue-600 rounded-full md:inline-block hover:bg-blue-700"
         >
-          Join
+          Gabung Sekarang
         </Link>
 
         {/* Mobile Button */}
         <button
-          className="md:hidden text-gray-600"
+          className="text-gray-600 md:hidden focus:outline-none"
           onClick={() => setOpen(!open)}
         >
-          ☰
+          {open ? "✕" : "☰"}
         </button>
       </div>
 
       {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden mt-3 bg-white rounded-xl shadow-md p-4 space-y-3">
-          <Link to="/" className="block" onClick={() => setOpen(false)}>
+        <div className="p-6 mt-3 space-y-4 bg-white border border-gray-100 shadow-xl md:hidden rounded-2xl">
+          <Link
+            to="/"
+            className="block font-medium"
+            onClick={() => setOpen(false)}
+          >
             Home
-          </Link>
-          <Link to="/events" className="block" onClick={() => setOpen(false)}>
-            Events
-          </Link>
-          <Link to="#" className="block" onClick={() => setOpen(false)}>
-            About
           </Link>
           <Link
             to="/events"
-            className="block text-center bg-blue-600 text-white py-2 rounded-lg"
+            className="block font-medium"
             onClick={() => setOpen(false)}
           >
-            Join Event
+            Kegiatan
+          </Link>
+          <Link
+            to="#"
+            className="block font-medium"
+            onClick={() => setOpen(false)}
+          >
+            Tentang Kami
+          </Link>
+          <Link
+            to="/events"
+            className="block py-3 font-bold text-center text-white bg-blue-600 rounded-xl"
+            onClick={() => setOpen(false)}
+          >
+            Daftar Jadi Relawan
           </Link>
         </div>
       )}

@@ -1,13 +1,13 @@
 export default function ValueSection() {
   return (
-    <section className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    <section className="grid items-center max-w-6xl gap-12 px-6 mx-auto md:grid-cols-2">
       <h2 className="text-3xl font-bold">
-        Your Path to <br /> Social Impact
+        Mulai Langkahmu <br /> Buat Perubahan Nyata
       </h2>
 
-      <p className="text-gray-600 leading-relaxed">
-        We believe volunteering can transform communities. 
-        Choose activities aligned with your passion and skills.
+      <p className="leading-relaxed text-gray-600">
+        Jadi relawan itu seru dan bisa bawa perubahan buat sekitar. Yuk, pilih
+        kegiatan yang paling cocok sama passion dan skill kamu!
       </p>
     </section>
   );

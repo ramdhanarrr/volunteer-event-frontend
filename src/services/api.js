@@ -1,15 +1,17 @@
 const events = [
   {
     id: 1,
-    title: "Beach Cleanup",
+    title: "Bersih-Bersih Pantai",
     event_date: "2026-02-10",
-    description: "Cleaning beach area together",
+    description:
+      "Seru-seruan bareng bersihin pesisir pantai dari sampah plastik.",
   },
   {
     id: 2,
-    title: "Tree Planting",
+    title: "Tanam Pohon Bareng",
     event_date: "2026-03-01",
-    description: "Planting trees for environment",
+    description:
+      "Aksi nyata buat bumi, tanam bibit pohon untuk masa depan yang lebih hijau.",
   },
 ];
 
@@ -25,7 +27,7 @@ export function getEventById(id) {
   return new Promise((resolve, reject) => {
     const event = events.find((e) => e.id === Number(id));
     setTimeout(() => {
-      event ? resolve(event) : reject("Event not found");
+      event ? resolve(event) : reject("Yah, kegiatannya nggak ketemu nih.");
     }, 1000);
   });
 }
@@ -33,7 +35,7 @@ export function getEventById(id) {
 export function joinEvent() {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve("Successfully joined the event");
+      resolve("Mantap! Kamu resmi bergabung di kegiatan ini.");
     }, 1000);
   });
 }
