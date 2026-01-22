@@ -20,7 +20,7 @@ export default function Navbar() {
           <Link to="/events" className="transition-colors hover:text-blue-600">
             Kegiatan
           </Link>
-          <Link to="#" className="transition-colors hover:text-blue-600">
+          <Link to="/about" className="transition-colors hover:text-blue-600">
             Tentang Kami
           </Link>
         </nav>
@@ -67,7 +67,7 @@ export default function Navbar() {
             Tentang Kami
           </Link>
           <Link
-            to="/events"
+            to="/about"
             className="block py-3 font-bold text-center text-white bg-blue-600 rounded-xl"
             onClick={() => setOpen(false)}
           >
