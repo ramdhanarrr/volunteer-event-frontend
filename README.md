@@ -34,6 +34,9 @@ src/
 │   ├── ValueSection.jsx
 │   └── ErrorMessage.jsx
 │
+├── layouts/
+│   ├── Layout.jsx
+│
 ├── pages/
 │   ├── Landing.jsx
 │   ├── EventList.jsx
